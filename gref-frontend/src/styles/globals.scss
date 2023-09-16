@@ -1,0 +1,13 @@
+@import './variables';
+
+/** Tailwind **/
+@import './tailwind/tailwind.scss';
+
+html body {
+  background-color: $bg-dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  padding: 3em;
+  text-rendering: optimizeLegibility;
+}
