@@ -1,15 +1,13 @@
 @import './variables';
 
+/** Tailwind **/
+@import './tailwind/tailwind.scss';
+
 html body {
+  background-color: $bg-dark;
+  color: rgba(255, 255, 255, 0.87);
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-
-  color: rgba(255, 255, 255, 0.87);
-  background-color: $bg-dark;
-
-  font-synthesis: none;
+  padding: 3em;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
