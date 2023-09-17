@@ -1,4 +1,4 @@
-export type OPTIONS_MENU = {
+export type OptionMenu = {
   name: string;
   href: string;
 };
