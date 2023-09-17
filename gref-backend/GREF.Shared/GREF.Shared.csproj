@@ -12,8 +12,4 @@
     <None Remove="DTOs\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Enums\" />
-  </ItemGroup>
-
 </Project>
