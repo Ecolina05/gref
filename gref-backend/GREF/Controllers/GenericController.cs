@@ -17,6 +17,17 @@ namespace GREF.Controllers
             _context = context;
             _entity = context.Set<T>();
         }
+        [HttpGet()]
+        public virtual async Task<IActionResult> GetAsync()
+        {
+            var action = await _unitOfWork.GetAsync();
+            if (action.WasSuccess)
+            {
+                return Ok(action.Result);
+            }
+            return NotFound();
+        }
+
         [HttpGet("{id}")]
         public virtual async Task<IActionResult> GetAsync(int id)
         {
