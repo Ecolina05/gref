@@ -1,0 +1,81 @@
+const allUsers = [
+  {
+    id: 1,
+    firstname: 'John',
+    lastname: 'Snow',
+    age: 20,
+    img: 'https://media.vanityfair.com/photos/63974b59d6001ee3cc78578a/1:1/w_2000,h_2000,c_limit/kit-harington-Jon-Snow.png',
+  },
+  {
+    id: 2,
+    firstname: 'Arya',
+    lastname: 'Stark',
+    age: 18,
+    img: 'https://static.hbo.com/content/dam/hbodata/series/game-of-thrones/character/s5/arya-stark-1920.jpg',
+  },
+  {
+    id: 3,
+    firstname: 'Tyrion',
+    lastname: 'Lannister',
+    age: 35,
+    img: 'https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Tyrion-Lannister.Game-of-Thrones.webp',
+  },
+  {
+    id: 4,
+    firstname: 'Daenerys',
+    lastname: 'Targaryen',
+    age: 25,
+    img: 'https://pbs.twimg.com/profile_images/1243475459125456896/e-zIQiFY_400x400.jpg',
+  },
+  {
+    id: 5,
+    firstname: 'Sansa',
+    lastname: 'Stark',
+    age: 22,
+    img: 'https://i.pinimg.com/474x/8e/81/9f/8e819f5e6e61fa5343c3c831b1aa6c7a.jpg',
+  },
+  {
+    id: 6,
+    firstname: 'Cersei',
+    lastname: 'Lannister',
+    age: 40,
+    img: 'https://media.revistagq.com/photos/5ca5ef86bda5940b2e33d5af/master/w_1600%2Cc_limit/juego_de_tronos_cersei_lannister_509.jpg',
+  },
+  {
+    id: 7,
+    firstname: 'Jaime',
+    lastname: 'Lannister',
+    age: 35,
+    img: 'https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/series-television/10-lecciones-de-vida-de-jaime-lannister/136189889-1-esl-ES/10-lecciones-de-vida-de-Jaime-Lannister.jpg',
+  },
+  {
+    id: 8,
+    firstname: 'Bran',
+    lastname: 'Stark',
+    age: 16,
+    img: 'https://media.revistagq.com/photos/5cf92193cb3e97457c5fc3b2/1:1/w_2700,h_2700,c_limit/bran%20edi.jpg',
+  },
+  {
+    id: 9,
+    firstname: 'Samwell',
+    lastname: 'Tarly',
+    age: 26,
+    img: 'https://nypost.com/wp-content/uploads/sites/2/2019/04/sam.web_.1200.675.jpg?quality=75&strip=all',
+  },
+  {
+    id: 10,
+    firstname: 'Margaery',
+    lastname: 'Tyrell',
+    age: 24,
+    img: 'https://www.eluniversal.com.mx/resizer/PWijdhJemvV1CrF2RKDObus22fw=/1100x666/filters:focal(503x365:513x375)/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/4CVMFWV4S5G7HAUWGZH5KP7P3A.jpg',
+  },
+  {
+    id: 11,
+    firstname: 'Robb',
+    lastname: 'Stark',
+    age: 27,
+    img: 'https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/5/5b/Robb_stark.jpg?width=640',
+  },
+];
+
+export { allUsers };
