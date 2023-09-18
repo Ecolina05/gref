@@ -1,6 +1,7 @@
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\bin\Debug\net7.0\GREF.Shared.deps.json
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\bin\Debug\net7.0\GREF.Shared.dll
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\bin\Debug\net7.0\GREF.Shared.pdb
+D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\obj\Debug\net7.0\GREF.Shared.csproj.AssemblyReference.cache
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\obj\Debug\net7.0\GREF.Shared.GeneratedMSBuildEditorConfig.editorconfig
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\obj\Debug\net7.0\GREF.Shared.AssemblyInfoInputs.cache
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\obj\Debug\net7.0\GREF.Shared.AssemblyInfo.cs
@@ -9,4 +10,3 @@ D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\obj\Debug\net7
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\obj\Debug\net7.0\refint\GREF.Shared.dll
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\obj\Debug\net7.0\GREF.Shared.pdb
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\obj\Debug\net7.0\ref\GREF.Shared.dll
-D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\obj\Debug\net7.0\GREF.Shared.csproj.AssemblyReference.cache
