@@ -25,8 +25,10 @@ const Login = () => {
 
   return (
     <section className="flex-center flex-col">
-      <h1 className="text-2xl">Gref</h1>
-      <h2 className="textlg">Login</h2>
+      <header className="flex-center flex-col">
+        <h1 className="text-2xl font-bold">Gref</h1>
+        <h2 className="text-lg">Login</h2>
+      </header>
 
       <form className="flex flex-col gap-5 mt-10" onSubmit={onSubmit}>
         <Input

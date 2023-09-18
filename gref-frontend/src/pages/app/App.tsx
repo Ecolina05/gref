@@ -19,7 +19,7 @@ const App = () => {
   return (
     <main>
       <header className="flex-center flex-col">
-        <h1 className="text-4xl">Gref</h1>
+        <h1 className="text-2xl font-bold">Gref</h1>
         <h2 className="text-lg">User Admin</h2>
       </header>
 

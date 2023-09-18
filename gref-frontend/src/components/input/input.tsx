@@ -20,7 +20,7 @@ const Input = ({
   register,
 }: Props) => (
   <div className="flex flex-col">
-    {label && (
+    {label && !withPlaceholder && (
       <label
         htmlFor={htmlFor}
         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -35,7 +35,7 @@ const Input = ({
       placeholder={withPlaceholder ? label : ''}
       required={required}
       autoComplete="off"
-      {...register!(name)}
+      {...(register && register(name))}
     />
   </div>
 );

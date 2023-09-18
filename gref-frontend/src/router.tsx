@@ -2,6 +2,8 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import Login from './pages/login/Login';
 import App from './pages/app/App';
+import Countries from './pages/countries/Countries';
+import Users from './pages/users/Users';
 
 export const router = createBrowserRouter([
   {
@@ -14,10 +16,10 @@ export const router = createBrowserRouter([
   },
   {
     path: '/countries',
-    element: <h1>countries</h1>,
+    element: <Countries />,
   },
   {
     path: '/users',
-    element: <h1>users</h1>,
+    element: <Users />,
   },
 ]);
