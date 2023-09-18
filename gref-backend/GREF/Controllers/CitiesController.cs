@@ -15,7 +15,5 @@ namespace GREF.Controllers
         {
             _context = context;
         }    
-        
-
     }
 }
