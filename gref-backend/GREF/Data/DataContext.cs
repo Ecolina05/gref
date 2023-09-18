@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using GREF.Shared.Entities;
 using GREF.Shared.Masters;
+using System.Reflection.Metadata;
 
 namespace GREF.Data
 {
@@ -21,6 +22,8 @@ namespace GREF.Data
 
         public DbSet<UserStatus> UserStatus { get; set; }
 
+        public DbSet<User> User { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -31,7 +34,7 @@ namespace GREF.Data
             modelBuilder.Entity<FinancialStatus>().HasIndex(c => c.Name).IsUnique();
             modelBuilder.Entity<RolType>().HasIndex(c => c.Name).IsUnique();
             modelBuilder.Entity<UserStatus>().HasIndex(c => c.Name).IsUnique();
-
+            modelBuilder.Entity<User>().HasIndex(c => c.Document).IsUnique();
         }
     }
 }
