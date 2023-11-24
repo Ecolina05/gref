@@ -22,7 +22,7 @@ namespace GREF.Controllers
         public virtual async Task<IActionResult> GetAsync()
         {
             var action = await _unitOfWork.GetAsync();
-            if (action.WasSuccess)
+            if (action != null)
             {
                 return Ok(action.Result);
             }
@@ -33,7 +33,7 @@ namespace GREF.Controllers
         public virtual async Task<IActionResult> GetAsync(int id)
         {
             var action = await _unitOfWork.GetAsync(id);
-            if (action.WasSuccess)
+            if (action != null)
             {
                 return Ok(action.Result);
             }
