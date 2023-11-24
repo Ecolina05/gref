@@ -21,5 +21,6 @@ namespace GREF.UnitsOfWork
         public async Task<Response<T>> GetAsync(int id) => await _repository.GetAsync(id);
 
         public async Task<Response<T>> UpdateAsync(T model) => await _repository.UpdateAsync(model);
+        public async Task<Response<T>> GetAsyncUserLogin(string email, string pwd) => await _repository.GetAsyncUserLogin(email, pwd);
     }
 }

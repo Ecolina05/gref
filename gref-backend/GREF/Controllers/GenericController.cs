@@ -1,5 +1,6 @@
 ﻿using GREF.Data;
 using GREF.Intertfaces;
+using GREF.Shared.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -42,12 +43,39 @@ namespace GREF.Controllers
         [HttpPost]
         public virtual async Task<IActionResult> PostAsync(T model)
         {
-            var action = await _unitOfWork.AddAsync(model);
-            if (action.WasSuccess)
+            if (model.GetType() == typeof(Users))
             {
-                return Ok(action.Result);
+                string? email = string.Empty;
+                string? pwd = string.Empty;
+                int? id = 1;
+
+                var properties = typeof(T).GetProperties();
+                foreach (var item in properties)
+                {
+                    if (item.Name.Equals("Id"))
+                        id = (int?)item.GetValue(model);
+                    if (item.Name.Equals("Email"))
+                        email = (string?)item.GetValue(model);
+                    if (item.Name.Equals("Pwd"))
+                        pwd = (string?)item.GetValue(model);
+                }
+
+                if (id.Equals(1))
+                {
+                    var action1 = await _unitOfWork.GetAsyncUserLogin(email, pwd);
+                    if (action1.WasSuccess)
+                    {
+                        return Ok(action1.Result);
+                    }
+                    return BadRequest(action1.Message);
+                }
             }
-            return BadRequest(action.Message);
+            var action2 = await _unitOfWork.AddAsync(model);
+            if (action2.WasSuccess)
+            {
+                return Ok(action2.Result);
+            }
+            return BadRequest(action2.Message);
         }
 
         [HttpPut]
