@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Gref',
-  description: 'Gref',
+  description: 'Gref'
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout ({ children }) {
   return (
     <html lang='es'>
       <body className={`dark ${inter.className}`}>

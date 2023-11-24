@@ -3,7 +3,7 @@ export const typeIdentityDocuments = [
   'TI - TARJETA DE IDENTIDAD',
   'CC - CÉDULA DE CIUDADANÍA',
   'CE - CÉDULA DE EXTRANJERÍA',
-  'PA - PASAPORTE',
+  'PA - PASAPORTE'
 ]
 
 export const usersType = ['ADMINISTRADOR', 'ASOCIADO INTERNO', 'ASOCIADO EXTERNO', 'CAPITALÍSTA']

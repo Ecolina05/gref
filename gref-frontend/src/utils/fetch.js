@@ -9,7 +9,7 @@ const useFetch = async (method, endpoint, body = null) => {
   const config = {
     method,
     headers,
-    ...(method !== 'GET' ? { body } : {}),
+    ...(method !== 'GET' ? { body } : {})
   }
 
   return fetch(`${API_URL}/${endpoint}`, config)

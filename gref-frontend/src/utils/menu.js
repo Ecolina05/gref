@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { VscGraph } from 'react-icons/vsc'
+// import { VscGraph } from 'react-icons/vsc'
 import { FaLayerGroup } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
-import { RiMoneyDollarCircleLine } from 'react-icons/ri'
-import { LuWallet } from 'react-icons/lu'
+// import { RiMoneyDollarCircleLine } from 'react-icons/ri'
+// import { LuWallet } from 'react-icons/lu'
 import { GiWorld } from 'react-icons/gi'
 
 const MENU = [
