@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace GREF.Migrations
 {
     /// <inheritdoc />
-    public partial class initialDB : Migration
+    public partial class initialdb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -61,6 +61,29 @@ namespace GREF.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_RolType", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    TipoDocumento = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NumeroDocumento = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Nombres = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PrimerApellido = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SegundoApellido = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Pwd = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    EstadoUsuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GrupoAhorro = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -212,6 +235,12 @@ namespace GREF.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_Users_Id_Email_Pwd",
+                table: "Users",
+                columns: new[] { "Id", "Email", "Pwd" },
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_UserStatus_Name",
                 table: "UserStatus",
                 column: "Name",
@@ -232,6 +261,9 @@ namespace GREF.Migrations
 
             migrationBuilder.DropTable(
                 name: "User");
+
+            migrationBuilder.DropTable(
+                name: "Users");
 
             migrationBuilder.DropTable(
                 name: "UserStatus");

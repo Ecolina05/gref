@@ -74,6 +74,23 @@ namespace GREF.Repositories
                 Message = "Registro no encontrado"
             };
         }
+        public async Task<Response<T>> GetAsyncUserLogin(string email, string pwd)
+        {
+            var row = await _context.Users.FirstOrDefaultAsync(x => x.Email == email && x.Pwd == pwd);
+            if (row != null)
+            {
+                return new Response<T>
+                {
+                    WasSuccess = true,
+                    Result = (T)Convert.ChangeType(row, typeof(T))
+                };
+            }
+            return new Response<T>
+            {
+                WasSuccess = false,
+                Message = "Registro no encontrado"
+            };
+        }
 
         public async Task<Response<IEnumerable<T>>> GetAsync()
         {

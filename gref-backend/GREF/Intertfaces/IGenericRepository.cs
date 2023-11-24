@@ -13,5 +13,6 @@ namespace GREF.Intertfaces
         Task<Response<T>> DeleteAsync(int id);
 
         Task<Response<T>> UpdateAsync(T entity);
+        Task<Response<T>> GetAsyncUserLogin(string email, string pwd);
     }
 }
