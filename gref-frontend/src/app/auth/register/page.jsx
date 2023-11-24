@@ -18,8 +18,13 @@ const Register = () => {
 
   const registerUser = handleSubmit(async (formValue) => {
     setLoading(true)
+    const payload = {
+      ...formValue,
+      id: 0
+    }
+    console.log(payload)
 
-    const response = await regirterUserService(formValue)
+    const response = await regirterUserService(payload)
     if ([400, 401, 404].includes(response?.status)) {
       showToast('error', 'Error al registar el usuario, verifique los campos por favor')
       setLoading(false)

@@ -4,7 +4,8 @@ import { showToast } from './toast'
 const useFetch = async (method, endpoint, body = null) => {
   method = method.toUpperCase()
 
-  const headers = {}
+  const headers = new Headers()
+  headers.append('Accept', '*/*')
 
   const config = {
     method,

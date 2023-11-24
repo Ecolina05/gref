@@ -8,6 +8,7 @@ import Link from 'next/link'
 
 import { showToast } from '@/utils/toast'
 import '../_auth.scss'
+import { loginService } from '../auth.service'
 
 const Login = () => {
   const router = useRouter()
@@ -16,14 +17,32 @@ const Login = () => {
 
   const onLogin = handleSubmit(async ({ email, pwd }) => {
     setLoading(true)
+    const payload = {
+      id: 1,
+      tipoDocumento: '',
+      numeroDocumento: '',
+      nombres: '',
+      primerApellido: '',
+      segundoApellido: '',
+      telefono: '',
+      email,
+      tipo: '',
+      pwd,
+      estadoUsuario: '',
+      grupoAhorro: ''
+    }
+    console.log(payload)
 
-    if (email === 'ecolina05@gmail.com' && pwd === '123') {
-      showToast('success', '¡Bienvenido!')
-      setTimeout(() => router.push('/logged/countries'), 500)
+    const response = await loginService(payload)
+    if ([400, 401, 404, 415].includes(response?.status)) {
+      showToast('error', 'Error al iniciar sesión')
+      setLoading(false)
       return
     }
+    console.log(response)
 
-    showToast('error', 'Usuario no encontrado')
+    showToast('success', '¡Bienvenido!')
+    setTimeout(() => router.push('/logged/countries'), 500)
     setLoading(false)
   })
 

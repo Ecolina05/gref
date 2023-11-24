@@ -5,5 +5,5 @@ export const regirterUserService = async (user) => {
 }
 
 export const loginService = async (user) => {
-  return await useFetch('POST', 'Login', user)
+  return await useFetch('POST', 'Users', user)
 }
