@@ -1,0 +1,21 @@
+@import '../../styles/mixins';
+
+.login-container {
+  @include flex-center;
+  flex-direction: column;
+
+  &__card {
+    @include flex-center;
+    width: 400px;
+  }
+}
+
+.register-container {
+  @include flex-center;
+  flex-direction: column;
+
+  &__card {
+    @include flex-center;
+    width: 700px;
+  }
+}

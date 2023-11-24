@@ -1,14 +1,23 @@
 @import './variables';
-@import './scroll';
 
-/** Tailwind **/
-@import './tailwind/tailwind.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-html body {
-  background-color: $bg-dark;
-  color: rgba(255, 255, 255, 0.87);
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  padding: 3em;
-  text-rendering: optimizeLegibility;
+html {
+  height: 100%;
+  width: 100%;
+
+  body {
+    background-color: $dark-background-color;
+    color: $dark-on-background-color;
+    height: 100%;
+    width: 100%;
+
+    @apply text-sm font-medium;
+
+    [data-overlay-container] {
+      height: 100% !important;
+    }
+  }
 }
