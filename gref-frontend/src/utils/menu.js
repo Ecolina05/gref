@@ -9,9 +9,9 @@ import { GiWorld } from 'react-icons/gi'
 
 const MENU = [
   // { name: 'Dashboard', icon: <VscGraph size={20} />, href: 'dashboard' },
-  { name: 'Paises', icon: <GiWorld size={20} />, href: 'countries' },
-  { name: 'Grupos de ahorros', icon: <FaLayerGroup size={20} />, href: 'saving-groups' },
-  { name: 'Admin. usuarios', icon: <FiUsers size={20} />, href: 'users' }
+  { name: 'Paises', icon: <GiWorld size={20} />, href: '/logged/countries' },
+  { name: 'Grupos de ahorros', icon: <FaLayerGroup size={20} />, href: '/logged/saving-groups' },
+  { name: 'Admin. usuarios', icon: <FiUsers size={20} />, href: '/logged/users' }
   // { name: 'Aportes', icon: <RiMoneyDollarCircleLine size={20} />, href: '' },
   // { name: 'Préstamos', icon: <LuWallet size={20} />, href: '' },
 ]

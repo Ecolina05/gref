@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Sidebar = () => {
   return (
     <article
-      className='h-full p-8 w-1/4 border-r-1 border-r-gray-700'
+      className='h-full p-8 w-1/4'
       style={{ backgroundColor: '#1e2122' }}
     >
       <ModuleName />

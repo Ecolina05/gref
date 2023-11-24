@@ -2,15 +2,18 @@
 
 import React from 'react'
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from '@nextui-org/react'
+import Header from '@/app/components/header'
 
 const Countries = () => {
+  const headerInfo = {
+    title: 'Países',
+    subtitle: 'Listado de todos los países registrados en nuestro sistema.',
+    action: 'countries/add'
+  }
+
   return (
     <>
-      <h1 className='text-xl'>Países</h1>
-      <h2 className='text-md italic text-default-500 mb-5'>
-        Listado de todos los países registrados en nuestro sistema.
-      </h2>
-
+      <Header header={headerInfo} />
       <Table aria-label='Tabla de países'>
         <TableHeader>
           <TableColumn>ID</TableColumn>

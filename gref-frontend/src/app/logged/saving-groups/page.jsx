@@ -1,15 +1,18 @@
+import Header from '@/app/components/header'
 import { Card, CardBody } from '@nextui-org/react'
 import React from 'react'
 
 const SavingGroups = () => {
   const groups = ['Grupo de familia', 'Grupo de trabajo', 'Grupo de fútbol']
+  const headerInfo = {
+    title: 'Grupos de ahorros',
+    subtitle: 'Listado de todos los grupos de ahorros registrados en nuestro sistema.',
+    action: 'saving-groups/add'
+  }
 
   return (
     <>
-      <h1 className='text-xl'>Grupos de ahorros</h1>
-      <h2 className='text-md italic text-default-500 mb-5'>
-        Listado de todos los grupos de ahorros registrados en nuestro sistema.
-      </h2>
+      <Header header={headerInfo} />
 
       <section className='flex gap-4 items-center flex-wrap border-r-1 border-gray-700'>
         {groups.map((group, index) => (
