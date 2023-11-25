@@ -24,6 +24,8 @@ namespace GREF.Data
 
         public DbSet<User> User { get; set; }
         public DbSet<Users> Users { get; set; }
+        public DbSet<Aportes> Aportes { get; set; }
+        public DbSet<Grupos> Grupos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -37,6 +39,8 @@ namespace GREF.Data
             modelBuilder.Entity<UserStatus>().HasIndex(c => c.Name).IsUnique();
             modelBuilder.Entity<User>().HasIndex(c => c.Document).IsUnique();
             modelBuilder.Entity<Users>().HasIndex(s => new { s.Id, s.Email, s.Pwd }).IsUnique();
+            modelBuilder.Entity<Aportes>().HasIndex(s => new { s.Id, s.IdUser }).IsUnique();
+            modelBuilder.Entity<Grupos>().HasIndex(s => new { s.Id }).IsUnique();
         }
     }
 }
