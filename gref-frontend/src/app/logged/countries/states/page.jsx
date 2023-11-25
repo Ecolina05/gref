@@ -57,7 +57,6 @@ const States = () => {
             <TableColumn>ID</TableColumn>
             <TableColumn>Nombre</TableColumn>
             <TableColumn>Número de ciudades</TableColumn>
-            <TableColumn></TableColumn>
           </TableHeader>
           <TableBody>
             {states.map((state, index) => (
@@ -65,15 +64,6 @@ const States = () => {
                 <TableCell>{state?.id}</TableCell>
                 <TableCell>{state?.name}</TableCell>
                 <TableCell>{state?.citiesNumber}</TableCell>
-                <TableCell>
-                  <Button
-                    color='success'
-                    variant='light'
-                    onPress={() => setCurrentStateData(state)}
-                  >
-                    <FiEye /> Detalles
-                  </Button>
-                </TableCell>
               </TableRow>
             ))}
           </TableBody>
