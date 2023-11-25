@@ -60,7 +60,7 @@ const Countries = () => {
             <TableColumn></TableColumn>
           </TableHeader>
           <TableBody>
-            {countries.map((country, index) => (
+            {countries?.map((country, index) => (
               <TableRow key={index}>
                 <TableCell>{country?.id}</TableCell>
                 <TableCell>{country?.name}</TableCell>

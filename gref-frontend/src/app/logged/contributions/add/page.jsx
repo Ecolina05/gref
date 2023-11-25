@@ -1,36 +1,45 @@
 'use client'
 
-import React, { useState } from 'react'
-import { Button, Card, CardBody, Input } from '@nextui-org/react'
-import { useForm } from 'react-hook-form'
 import { useRouter } from 'next/navigation'
-import Header from '@/app/components/header'
-import Link from 'next/link'
+import React, { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { registerContributionsService } from '../contributions.service'
 import { showToast } from '@/utils/toast'
-import { registerSavingGroupsService } from '../saving-groups.service'
+import Header from '@/app/components/header'
+import { Button, Card, CardBody, Input } from '@nextui-org/react'
+import Link from 'next/link'
 
-const AddSavingGroup = () => {
+const AddContribution = () => {
   const router = useRouter()
   const { register, handleSubmit } = useForm()
   const [loading, setLoading] = useState(false)
   const headerInfo = {
-    title: 'Agregar grupo ahorro',
-    subtitle: 'Para agregar un grupo de ahorro complete los siguiente campos:'
+    title: 'Agregar aporte',
+    subtitle: 'Para agregar un aporte complete los siguiente campos:'
   }
 
-  const registerSavinggroup = handleSubmit(async (formValue) => {
+  const registerContribution = handleSubmit(async ({ name }) => {
     setLoading(true)
+    const payload = {
+      id: 1,
+      idUser: '6',
+      periodicidad: '',
+      meta: '100000',
+      estado: 'vigente',
+      duracion: 'MENSUAL',
+      fecha: '25/11/23'
+    }
 
-    const response = await registerSavingGroupsService(formValue)
-    if (response === 'Registro no encontrado' || [400, 401, 404, 415].includes(response?.status)) {
-      showToast('error', 'Error al agregar un grupo de ahorros')
+    const response = await registerContributionsService(payload)
+    if ([400, 401, 404].includes(response?.status)) {
+      showToast('error', 'Error al registar el país, verifique los campos por favor')
       setLoading(false)
       return
     }
 
     setLoading(false)
-    showToast('success', 'Grupo de ahorros registrado!')
-    setTimeout(() => router.push('/logged/saving-groups'), 500)
+    showToast('success', 'País registrado con éxito')
+    setTimeout(() => router.push('/logged/countries'), 500)
   })
 
   return (
@@ -44,24 +53,18 @@ const AddSavingGroup = () => {
         <CardBody>
           <form
             className='flex flex-col gap-5'
-            onSubmit={registerSavinggroup}
+            onSubmit={registerContribution}
           >
             <div className='flex gap-3 items-center mt-3 justify-center mx-10'>
               <Input
                 type='text'
-                label='Nombre grupo'
-                {...register('nombreGrupo')}
-              />
-
-              <Input
-                type='text'
-                label='Descripción'
-                {...register('descripcion')}
+                label='Periodicidad'
+                {...register('periodicidad')}
               />
             </div>
 
             <div className='flex gap-3 items-center mt-3 justify-center'>
-              <Link href='/logged/saving-groups'>
+              <Link href='/logged/countries'>
                 <Button
                   color='success'
                   variant='light'
@@ -84,4 +87,4 @@ const AddSavingGroup = () => {
   )
 }
 
-export default AddSavingGroup
+export default AddContribution
