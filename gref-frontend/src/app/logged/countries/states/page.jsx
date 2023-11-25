@@ -9,12 +9,10 @@ import {
   TableRow,
   TableCell,
   Spinner,
-  Button,
   useDisclosure,
   ScrollShadow
 } from '@nextui-org/react'
 import Header from '@/app/components/header'
-import { FiEye } from 'react-icons/fi'
 import { getStatesService } from '../countries.service'
 import AddState from './add-state'
 
