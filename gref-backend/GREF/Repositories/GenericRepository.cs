@@ -1,5 +1,6 @@
 ﻿using GREF.Data;
 using GREF.Intertfaces;
+using GREF.Shared.Entities;
 using GREF.Shared.Responses;
 using Microsoft.EntityFrameworkCore;
 
@@ -74,6 +75,23 @@ namespace GREF.Repositories
                 Message = "Registro no encontrado"
             };
         }
+        public async Task<Country> GetCountryAsync(int id)
+        {
+            var country = await _context.Countries
+                    .Include(c => c.States!)
+                    .ThenInclude(s => s.Cities)
+                    .FirstOrDefaultAsync(c => c.Id == id);
+            return country!;
+        }
+
+        public async Task<City> GetCitiesAsync(int id)
+        {
+            var country = await _context.Cities
+                    .Include(c => c.Id!)
+                    .FirstOrDefaultAsync(c => c.Id == id);
+            return country!;
+        }
+
         public async Task<Response<T>> GetAsyncUserLogin(string email, string pwd)
         {
             var row = await _context.Users.FirstOrDefaultAsync(x => x.Email == email && x.Pwd == pwd);

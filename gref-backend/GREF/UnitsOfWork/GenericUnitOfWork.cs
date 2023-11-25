@@ -1,4 +1,5 @@
 ﻿using GREF.Intertfaces;
+using GREF.Shared.Entities;
 using GREF.Shared.Responses;
 
 namespace GREF.UnitsOfWork
@@ -22,5 +23,7 @@ namespace GREF.UnitsOfWork
 
         public async Task<Response<T>> UpdateAsync(T model) => await _repository.UpdateAsync(model);
         public async Task<Response<T>> GetAsyncUserLogin(string email, string pwd) => await _repository.GetAsyncUserLogin(email, pwd);
+        public async Task<Country> GetCountryAsync(int id) => await _repository.GetCountryAsync(id);
+        public async Task<City> GetCitiesAsync(int id) => await _repository.GetCitiesAsync(id);
     }
 }

@@ -40,6 +40,27 @@ namespace GREF.Controllers
             return NotFound();
         }
 
+        //[HttpGet("{id}")]
+        //public virtual async Task<IActionResult> GetCountryAsync(int id)
+        //{
+        //    var action = await _unitOfWork.GetCountryAsync(id);
+        //    if (action != null)
+        //    {
+        //        return Ok(action);
+        //    }
+        //    return NotFound();
+        //}
+        //[HttpGet("{id}")]
+        //public virtual async Task<IActionResult> GetCitiesAsync(int id)
+        //{
+        //    var action = await _unitOfWork.GetCitiesAsync(id);
+        //    if (action != null)
+        //    {
+        //        return Ok(action);
+        //    }
+        //    return NotFound();
+        //}
+
         [HttpPost]
         public virtual async Task<IActionResult> PostAsync(T model)
         {

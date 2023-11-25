@@ -47,19 +47,18 @@ namespace GREF.UnitTest.Controllers
         {
             //Arrange
             using var context = new DataContext(_options);
-            var cities = new City { Id = 1, Name = "Antioquia", StateId=1 };
+            var cities = new City { Id = 1, Name = "Antioquia", StateId = 1 };
 
-            var response = new Mock<CityResponse>(cities);
-
-            _unitOfWorkMock.Setup( x => x.GetAsync(1)).ReturnsAsync(cities);
+            _unitOfWorkMock.Setup(x => x.GetCitiesAsync(cities.Id)).ReturnsAsync(cities);
             
-            var controller = new GenericController<City>(_unitOfWorkMock.Object, context);
+            
+            var controller = new CitiesController(_unitOfWorkMock.Object, context);
 
             //Act
             var result = await controller.GetAsync(cities.Id) as OkObjectResult;
             //Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual(404, result.StatusCode);
+            Assert.AreEqual(200, result.StatusCode);
 
             //clean up
             context.Database.EnsureDeleted();
