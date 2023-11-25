@@ -10,16 +10,27 @@ const Header = ({ header }) => {
         <h2 className='text-md text-default-500 mb-5'>{header.subtitle || ''}</h2>
       </div>
 
-      {header.action && (
-        <Link href={header.action}>
+      {header.action &&
+        (typeof header.action === 'string'
+          ? (
+          <Link href={header.action}>
+            <Button
+              color='success'
+              type='button'
+            >
+              Agregar
+            </Button>
+          </Link>
+            )
+          : (
           <Button
             color='success'
             type='button'
+            onClick={() => header.action()}
           >
             Agregar
           </Button>
-        </Link>
-      )}
+            ))}
     </header>
   )
 }

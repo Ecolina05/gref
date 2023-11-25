@@ -14,62 +14,62 @@ import {
   ScrollShadow
 } from '@nextui-org/react'
 import Header from '@/app/components/header'
-import { getCountriesService } from './countries.service'
 import { FiEye } from 'react-icons/fi'
-import CountryDetails from './country-details'
+import { getStatesService } from '../countries.service'
+import AddState from './add-state'
 
-const Countries = () => {
+const States = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
   const [loading, setLoading] = useState(false)
-  const [countries, setCountries] = useState([])
-  const [currentCountry, setCurrentCountry] = useState('')
-
-  const headerInfo = {
-    title: 'Países',
-    subtitle: 'Listado de todos los países registrados en nuestro sistema.',
-    action: 'countries/add'
-  }
+  const [states, setStates] = useState([])
+  const [, setCurrentState] = useState('')
 
   const getUsers = async () => {
     setLoading(true)
-    const response = await getCountriesService()
-    response && setCountries(response)
+    const response = await getStatesService()
+    response && setStates(response)
 
     setLoading(false)
   }
 
-  const setCurrentCountryData = (user) => {
+  const setCurrentStateData = (user) => {
     onOpen()
-    setCurrentCountry(user)
+    setCurrentState(user)
   }
 
   useEffect(() => {
     getUsers()
   }, [])
 
+  const headerInfo = {
+    title: 'Departamentos/estados',
+    subtitle: 'Listado de todos los departamentos registrados en nuestro sistema.',
+    action: setCurrentStateData
+  }
+
   return (
     <>
       <Header header={headerInfo} />
 
       <ScrollShadow className='w-full h-[550px]'>
-        <Table aria-label='Tabla de países'>
+        <Table aria-label='Tabla de departamentos/estados'>
           <TableHeader>
             <TableColumn>ID</TableColumn>
-            <TableColumn>Nombre país</TableColumn>
-            <TableColumn>Departamentos/Estados</TableColumn>
+            <TableColumn>Nombre</TableColumn>
+            <TableColumn>Número de ciudades</TableColumn>
             <TableColumn></TableColumn>
           </TableHeader>
           <TableBody>
-            {countries.map((country, index) => (
+            {states.map((state, index) => (
               <TableRow key={index}>
-                <TableCell>{country?.id}</TableCell>
-                <TableCell>{country?.name}</TableCell>
-                <TableCell>{country?.statesNumber}</TableCell>
+                <TableCell>{state?.id}</TableCell>
+                <TableCell>{state?.name}</TableCell>
+                <TableCell>{state?.citiesNumber}</TableCell>
                 <TableCell>
                   <Button
                     color='success'
                     variant='light'
-                    onPress={() => setCurrentCountryData(country)}
+                    onPress={() => setCurrentStateData(state)}
                   >
                     <FiEye /> Detalles
                   </Button>
@@ -86,13 +86,12 @@ const Countries = () => {
         </div>
       )}
 
-      <CountryDetails
+      <AddState
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        country={currentCountry}
       />
     </>
   )
 }
 
-export default Countries
+export default States

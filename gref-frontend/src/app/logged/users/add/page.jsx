@@ -7,16 +7,18 @@ import { typeIdentityDocuments, usersType } from '@/services/common.service'
 import { showToast } from '@/utils/toast'
 import { regirterUserService } from '@/app/auth/auth.service'
 import { useForm } from 'react-hook-form'
+import { useRouter } from 'next/navigation'
 
 import Header from '@/app/components/header'
 import Link from 'next/link'
 
 const AddUser = () => {
+  const router = useRouter()
   const { register, handleSubmit } = useForm()
   const [loading, setLoading] = useState(false)
   const headerInfo = {
     title: 'Agregar usuario',
-    subtitle: 'Para agregar un usuario complete los siguiente campos:',
+    subtitle: 'Para agregar un usuario complete los siguiente campos:'
   }
 
   const registerUser = handleSubmit(async (formValue) => {
@@ -25,7 +27,7 @@ const AddUser = () => {
       ...formValue,
       id: 0,
       estadoUsuario: 'Active',
-      grupoAhorro: '',
+      grupoAhorro: ''
     }
 
     const response = await regirterUserService(payload)
@@ -37,7 +39,7 @@ const AddUser = () => {
 
     setLoading(false)
     showToast('success', 'Usuario registrado con éxito')
-    setTimeout(() => router.push('/users'), 500)
+    setTimeout(() => router.push('/logged/users'), 500)
   })
 
   return (
