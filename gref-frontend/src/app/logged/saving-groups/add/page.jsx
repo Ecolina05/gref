@@ -3,10 +3,15 @@
 import React, { useState } from 'react'
 import { Button, Card, CardBody, Input } from '@nextui-org/react'
 import { useForm } from 'react-hook-form'
+import { useRouter } from 'next/navigation'
 import Header from '@/app/components/header'
 import Link from 'next/link'
+import { showToast } from '@/utils/toast'
+import { useSavingGroupsStore } from '@/store/saving-groups-store'
 
 const AddSavingGroup = () => {
+  const router = useRouter()
+  const { updateSavingGroups } = useSavingGroupsStore()
   const { register, handleSubmit } = useForm()
   const [loading, setLoading] = useState(false)
   const headerInfo = {
@@ -15,16 +20,14 @@ const AddSavingGroup = () => {
   }
 
   const registerSavinggroup = handleSubmit(async (formValue) => {
-    // setLoading(true)
-    // const payload = {
-    //   ...formValue
-    // }
-    // const response = await regirterUserService(payload)
-    // if ([400, 401, 404].includes(response?.status)) {
-    //   showToast('error', 'Error al registar el usuario, verifique los campos por favor')
-    //   setLoading(false)
-    //   return
-    // }
+    setLoading(true)
+    updateSavingGroups(formValue)
+
+    setTimeout(() => {
+      setLoading(false)
+      showToast('success', 'Grupo de ahorros registrado!')
+      setTimeout(() => router.push('/logged/saving-groups'), 500)
+    }, 1000)
   })
 
   return (
