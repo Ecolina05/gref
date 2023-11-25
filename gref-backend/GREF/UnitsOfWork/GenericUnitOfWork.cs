@@ -25,5 +25,6 @@ namespace GREF.UnitsOfWork
         public async Task<Response<T>> GetAsyncUserLogin(string email, string pwd) => await _repository.GetAsyncUserLogin(email, pwd);
         public async Task<Country> GetCountryAsync(int id) => await _repository.GetCountryAsync(id);
         public async Task<City> GetCitiesAsync(int id) => await _repository.GetCitiesAsync(id);
+        public async Task<Grupos> GetGruposAsync(int id) => await _repository.GetGruposAsync(id);
     }
 }

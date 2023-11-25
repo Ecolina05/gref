@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.210526315789474" branch-rate="0.0526315789473684" lines-covered="112" lines-valid="532" branches-covered="4" branches-valid="76" complexity="179" version="0" timestamp="1700918278">
+<coverage line-rate="0.26" branch-rate="0.0769230769230769" lines-covered="156" lines-valid="600" branches-covered="6" branches-valid="78" complexity="201" version="0" timestamp="1700921853">
   <sources>
     <source>D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\</source>
     <source>C:\</source>
   </sources>
   <packages>
-    <package name="GREF" line-rate="0.134117647058824" branch-rate="0.0555555555555556" complexity="114">
+    <package name="GREF" line-rate="0.15938864628821" branch-rate="0.0810810810810811" complexity="123">
       <classes>
+        <class name="GREF.Controllers.AportesController" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\Controllers\AportesController.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+          </lines>
+        </class>
         <class name="GREF.Controllers.CitiesController" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\Controllers\CitiesController.cs" line-rate="0.705882352941177" branch-rate="1" complexity="4">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
@@ -138,12 +158,12 @@
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="4" branch="false" />
-                <line number="16" hits="4" branch="false" />
-                <line number="17" hits="4" branch="false" />
-                <line number="18" hits="4" branch="false" />
-                <line number="19" hits="4" branch="false" />
-                <line number="20" hits="4" branch="false" />
+                <line number="15" hits="6" branch="false" />
+                <line number="16" hits="6" branch="false" />
+                <line number="17" hits="6" branch="false" />
+                <line number="18" hits="6" branch="false" />
+                <line number="19" hits="6" branch="false" />
+                <line number="20" hits="6" branch="false" />
               </lines>
             </method>
             <method name="DeleteAsync" signature="()" line-rate="0" branch-rate="0" complexity="4">
@@ -230,12 +250,12 @@
             </method>
           </methods>
           <lines>
-            <line number="15" hits="4" branch="false" />
-            <line number="16" hits="4" branch="false" />
-            <line number="17" hits="4" branch="false" />
-            <line number="18" hits="4" branch="false" />
-            <line number="19" hits="4" branch="false" />
-            <line number="20" hits="4" branch="false" />
+            <line number="15" hits="6" branch="false" />
+            <line number="16" hits="6" branch="false" />
+            <line number="17" hits="6" branch="false" />
+            <line number="18" hits="6" branch="false" />
+            <line number="19" hits="6" branch="false" />
+            <line number="20" hits="6" branch="false" />
             <line number="23" hits="0" branch="false" />
             <line number="24" hits="0" branch="false" />
             <line number="25" hits="0" branch="true" condition-coverage="0% (0/2)" />
@@ -298,6 +318,58 @@
             <line number="124" hits="0" branch="false" />
             <line number="126" hits="0" branch="false" />
             <line number="127" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="GREF.Controllers.GruposController" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\Controllers\GruposController.cs" line-rate="0.705882352941177" branch-rate="1" complexity="4">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="2" branch="false" />
+                <line number="17" hits="2" branch="false" />
+                <line number="18" hits="2" branch="false" />
+                <line number="19" hits="2" branch="false" />
+                <line number="20" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="0" branch="false" />
+                <line number="25" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAsync" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="32" hits="2" branch="false" />
+                <line number="33" hits="2" branch="false" />
+                <line number="34" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="35" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="2" branch="false" />
+            <line number="17" hits="2" branch="false" />
+            <line number="18" hits="2" branch="false" />
+            <line number="19" hits="2" branch="false" />
+            <line number="20" hits="2" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="32" hits="2" branch="false" />
+            <line number="33" hits="2" branch="false" />
+            <line number="34" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="35" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="2" branch="false" />
           </lines>
         </class>
         <class name="GREF.Controllers.RolTypeController" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\Controllers\RolTypeController.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -390,57 +462,65 @@
             <line number="18" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="GREF.Data.DataContext" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\Data\DataContext.cs" line-rate="1" branch-rate="1" complexity="11">
+        <class name="GREF.Data.DataContext" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\Data\DataContext.cs" line-rate="1" branch-rate="1" complexity="13">
           <methods>
             <method name="get_Cities" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="4" branch="false" />
+                <line number="14" hits="6" branch="false" />
               </lines>
             </method>
             <method name="get_Countries" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="4" branch="false" />
+                <line number="16" hits="6" branch="false" />
               </lines>
             </method>
             <method name="get_States" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="4" branch="false" />
+                <line number="18" hits="6" branch="false" />
               </lines>
             </method>
             <method name="get_Concepts" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="4" branch="false" />
+                <line number="19" hits="6" branch="false" />
               </lines>
             </method>
             <method name="get_FinancialStatus" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="4" branch="false" />
+                <line number="20" hits="6" branch="false" />
               </lines>
             </method>
             <method name="get_RolType" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="4" branch="false" />
+                <line number="21" hits="6" branch="false" />
               </lines>
             </method>
             <method name="get_UserStatus" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="4" branch="false" />
+                <line number="23" hits="6" branch="false" />
               </lines>
             </method>
             <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="4" branch="false" />
+                <line number="25" hits="6" branch="false" />
               </lines>
             </method>
             <method name="get_Users" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="26" hits="4" branch="false" />
+                <line number="26" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Aportes" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Grupos" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="6" branch="false" />
               </lines>
             </method>
             <method name="OnModelCreating" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="29" hits="1" branch="false" />
-                <line number="30" hits="1" branch="false" />
                 <line number="31" hits="1" branch="false" />
                 <line number="32" hits="1" branch="false" />
                 <line number="33" hits="1" branch="false" />
@@ -451,31 +531,35 @@
                 <line number="38" hits="1" branch="false" />
                 <line number="39" hits="1" branch="false" />
                 <line number="40" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="44" hits="1" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="4" branch="false" />
-                <line number="11" hits="4" branch="false" />
-                <line number="12" hits="4" branch="false" />
+                <line number="10" hits="6" branch="false" />
+                <line number="11" hits="6" branch="false" />
+                <line number="12" hits="6" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="10" hits="4" branch="false" />
-            <line number="11" hits="4" branch="false" />
-            <line number="12" hits="4" branch="false" />
-            <line number="14" hits="4" branch="false" />
-            <line number="16" hits="4" branch="false" />
-            <line number="18" hits="4" branch="false" />
-            <line number="19" hits="4" branch="false" />
-            <line number="20" hits="4" branch="false" />
-            <line number="21" hits="4" branch="false" />
-            <line number="23" hits="4" branch="false" />
-            <line number="25" hits="4" branch="false" />
-            <line number="26" hits="4" branch="false" />
-            <line number="29" hits="1" branch="false" />
-            <line number="30" hits="1" branch="false" />
+            <line number="10" hits="6" branch="false" />
+            <line number="11" hits="6" branch="false" />
+            <line number="12" hits="6" branch="false" />
+            <line number="14" hits="6" branch="false" />
+            <line number="16" hits="6" branch="false" />
+            <line number="18" hits="6" branch="false" />
+            <line number="19" hits="6" branch="false" />
+            <line number="20" hits="6" branch="false" />
+            <line number="21" hits="6" branch="false" />
+            <line number="23" hits="6" branch="false" />
+            <line number="25" hits="6" branch="false" />
+            <line number="26" hits="6" branch="false" />
+            <line number="27" hits="6" branch="false" />
+            <line number="28" hits="6" branch="false" />
             <line number="31" hits="1" branch="false" />
             <line number="32" hits="1" branch="false" />
             <line number="33" hits="1" branch="false" />
@@ -486,6 +570,10 @@
             <line number="38" hits="1" branch="false" />
             <line number="39" hits="1" branch="false" />
             <line number="40" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="44" hits="1" branch="false" />
           </lines>
         </class>
         <class name="GREF.Data.SeedDb" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\Data\SeedDb.cs" line-rate="0" branch-rate="0" complexity="32">
@@ -634,36 +722,36 @@
             <line number="83" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="GREF.Repositories.GenericRepository`1" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\Repositories\GenericRepository.cs" line-rate="0" branch-rate="0" complexity="15">
+        <class name="GREF.Repositories.GenericRepository`1" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\Repositories\GenericRepository.cs" line-rate="0" branch-rate="0" complexity="16">
           <methods>
             <method name="ExceptionResponse" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="145" hits="0" branch="false" />
-                <line number="146" hits="0" branch="false" />
-                <line number="147" hits="0" branch="false" />
-                <line number="148" hits="0" branch="false" />
-                <line number="149" hits="0" branch="false" />
-                <line number="150" hits="0" branch="false" />
-                <line number="151" hits="0" branch="false" />
+                <line number="152" hits="0" branch="false" />
+                <line number="153" hits="0" branch="false" />
+                <line number="154" hits="0" branch="false" />
+                <line number="155" hits="0" branch="false" />
+                <line number="156" hits="0" branch="false" />
+                <line number="157" hits="0" branch="false" />
+                <line number="158" hits="0" branch="false" />
               </lines>
             </method>
             <method name="DbUpdateExceptionResponse" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="154" hits="0" branch="false" />
-                <line number="155" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="156" hits="0" branch="false" />
-                <line number="157" hits="0" branch="false" />
-                <line number="158" hits="0" branch="false" />
-                <line number="159" hits="0" branch="false" />
-                <line number="160" hits="0" branch="false" />
                 <line number="161" hits="0" branch="false" />
+                <line number="162" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="163" hits="0" branch="false" />
                 <line number="164" hits="0" branch="false" />
                 <line number="165" hits="0" branch="false" />
                 <line number="166" hits="0" branch="false" />
                 <line number="167" hits="0" branch="false" />
                 <line number="168" hits="0" branch="false" />
-                <line number="169" hits="0" branch="false" />
                 <line number="171" hits="0" branch="false" />
+                <line number="172" hits="0" branch="false" />
+                <line number="173" hits="0" branch="false" />
+                <line number="174" hits="0" branch="false" />
+                <line number="175" hits="0" branch="false" />
+                <line number="176" hits="0" branch="false" />
+                <line number="178" hits="0" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
@@ -715,6 +803,17 @@
                 <line number="59" hits="0" branch="false" />
               </lines>
             </method>
+            <method name="GetAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="121" hits="0" branch="false" />
+                <line number="122" hits="0" branch="false" />
+                <line number="123" hits="0" branch="false" />
+                <line number="124" hits="0" branch="false" />
+                <line number="125" hits="0" branch="false" />
+                <line number="126" hits="0" branch="false" />
+                <line number="127" hits="0" branch="false" />
+              </lines>
+            </method>
             <method name="GetAsync" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
                 <line number="62" hits="0" branch="false" />
@@ -734,34 +833,23 @@
                 <line number="77" hits="0" branch="false" />
               </lines>
             </method>
-            <method name="GetAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="114" hits="0" branch="false" />
-                <line number="115" hits="0" branch="false" />
-                <line number="116" hits="0" branch="false" />
-                <line number="117" hits="0" branch="false" />
-                <line number="118" hits="0" branch="false" />
-                <line number="119" hits="0" branch="false" />
-                <line number="120" hits="0" branch="false" />
-              </lines>
-            </method>
             <method name="GetAsyncUserLogin" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="96" hits="0" branch="false" />
-                <line number="97" hits="0" branch="false" />
-                <line number="98" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="99" hits="0" branch="false" />
-                <line number="100" hits="0" branch="false" />
-                <line number="101" hits="0" branch="false" />
-                <line number="102" hits="0" branch="false" />
                 <line number="103" hits="0" branch="false" />
                 <line number="104" hits="0" branch="false" />
+                <line number="105" hits="0" branch="true" condition-coverage="0% (0/2)" />
                 <line number="106" hits="0" branch="false" />
                 <line number="107" hits="0" branch="false" />
                 <line number="108" hits="0" branch="false" />
                 <line number="109" hits="0" branch="false" />
                 <line number="110" hits="0" branch="false" />
                 <line number="111" hits="0" branch="false" />
+                <line number="113" hits="0" branch="false" />
+                <line number="114" hits="0" branch="false" />
+                <line number="115" hits="0" branch="false" />
+                <line number="116" hits="0" branch="false" />
+                <line number="117" hits="0" branch="false" />
+                <line number="118" hits="0" branch="false" />
               </lines>
             </method>
             <method name="GetCitiesAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -785,24 +873,34 @@
                 <line number="85" hits="0" branch="false" />
               </lines>
             </method>
+            <method name="GetGruposAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="95" hits="0" branch="false" />
+                <line number="96" hits="0" branch="false" />
+                <line number="97" hits="0" branch="false" />
+                <line number="98" hits="0" branch="false" />
+                <line number="99" hits="0" branch="false" />
+                <line number="100" hits="0" branch="false" />
+              </lines>
+            </method>
             <method name="UpdateAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="123" hits="0" branch="false" />
-                <line number="125" hits="0" branch="false" />
-                <line number="126" hits="0" branch="false" />
-                <line number="127" hits="0" branch="false" />
-                <line number="128" hits="0" branch="false" />
-                <line number="129" hits="0" branch="false" />
                 <line number="130" hits="0" branch="false" />
-                <line number="131" hits="0" branch="false" />
                 <line number="132" hits="0" branch="false" />
+                <line number="133" hits="0" branch="false" />
                 <line number="134" hits="0" branch="false" />
                 <line number="135" hits="0" branch="false" />
                 <line number="136" hits="0" branch="false" />
+                <line number="137" hits="0" branch="false" />
                 <line number="138" hits="0" branch="false" />
                 <line number="139" hits="0" branch="false" />
-                <line number="140" hits="0" branch="false" />
+                <line number="141" hits="0" branch="false" />
                 <line number="142" hits="0" branch="false" />
+                <line number="143" hits="0" branch="false" />
+                <line number="145" hits="0" branch="false" />
+                <line number="146" hits="0" branch="false" />
+                <line number="147" hits="0" branch="false" />
+                <line number="149" hits="0" branch="false" />
               </lines>
             </method>
           </methods>
@@ -872,66 +970,72 @@
             <line number="91" hits="0" branch="false" />
             <line number="92" hits="0" branch="false" />
             <line number="93" hits="0" branch="false" />
+            <line number="95" hits="0" branch="false" />
             <line number="96" hits="0" branch="false" />
             <line number="97" hits="0" branch="false" />
-            <line number="98" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="98" hits="0" branch="false" />
             <line number="99" hits="0" branch="false" />
             <line number="100" hits="0" branch="false" />
-            <line number="101" hits="0" branch="false" />
-            <line number="102" hits="0" branch="false" />
             <line number="103" hits="0" branch="false" />
             <line number="104" hits="0" branch="false" />
+            <line number="105" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="106" hits="0" branch="false" />
             <line number="107" hits="0" branch="false" />
             <line number="108" hits="0" branch="false" />
             <line number="109" hits="0" branch="false" />
             <line number="110" hits="0" branch="false" />
             <line number="111" hits="0" branch="false" />
+            <line number="113" hits="0" branch="false" />
             <line number="114" hits="0" branch="false" />
             <line number="115" hits="0" branch="false" />
             <line number="116" hits="0" branch="false" />
             <line number="117" hits="0" branch="false" />
             <line number="118" hits="0" branch="false" />
-            <line number="119" hits="0" branch="false" />
-            <line number="120" hits="0" branch="false" />
+            <line number="121" hits="0" branch="false" />
+            <line number="122" hits="0" branch="false" />
             <line number="123" hits="0" branch="false" />
+            <line number="124" hits="0" branch="false" />
             <line number="125" hits="0" branch="false" />
             <line number="126" hits="0" branch="false" />
             <line number="127" hits="0" branch="false" />
-            <line number="128" hits="0" branch="false" />
-            <line number="129" hits="0" branch="false" />
             <line number="130" hits="0" branch="false" />
-            <line number="131" hits="0" branch="false" />
             <line number="132" hits="0" branch="false" />
+            <line number="133" hits="0" branch="false" />
             <line number="134" hits="0" branch="false" />
             <line number="135" hits="0" branch="false" />
             <line number="136" hits="0" branch="false" />
+            <line number="137" hits="0" branch="false" />
             <line number="138" hits="0" branch="false" />
             <line number="139" hits="0" branch="false" />
-            <line number="140" hits="0" branch="false" />
+            <line number="141" hits="0" branch="false" />
             <line number="142" hits="0" branch="false" />
+            <line number="143" hits="0" branch="false" />
             <line number="145" hits="0" branch="false" />
             <line number="146" hits="0" branch="false" />
             <line number="147" hits="0" branch="false" />
-            <line number="148" hits="0" branch="false" />
             <line number="149" hits="0" branch="false" />
-            <line number="150" hits="0" branch="false" />
-            <line number="151" hits="0" branch="false" />
+            <line number="152" hits="0" branch="false" />
+            <line number="153" hits="0" branch="false" />
             <line number="154" hits="0" branch="false" />
-            <line number="155" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="155" hits="0" branch="false" />
             <line number="156" hits="0" branch="false" />
             <line number="157" hits="0" branch="false" />
             <line number="158" hits="0" branch="false" />
-            <line number="159" hits="0" branch="false" />
-            <line number="160" hits="0" branch="false" />
             <line number="161" hits="0" branch="false" />
+            <line number="162" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="163" hits="0" branch="false" />
             <line number="164" hits="0" branch="false" />
             <line number="165" hits="0" branch="false" />
             <line number="166" hits="0" branch="false" />
             <line number="167" hits="0" branch="false" />
             <line number="168" hits="0" branch="false" />
-            <line number="169" hits="0" branch="false" />
             <line number="171" hits="0" branch="false" />
+            <line number="172" hits="0" branch="false" />
+            <line number="173" hits="0" branch="false" />
+            <line number="174" hits="0" branch="false" />
+            <line number="175" hits="0" branch="false" />
+            <line number="176" hits="0" branch="false" />
+            <line number="178" hits="0" branch="false" />
           </lines>
         </class>
         <class name="GREF.Services.ApiService" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\Services\ApiService.cs" line-rate="0" branch-rate="0" complexity="4">
@@ -1032,7 +1136,7 @@
             <line number="61" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="GREF.UnitsOfWork.GenericUnitOfWork`1" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\UnitsOfWork\GenericUnitOfWork.cs" line-rate="0" branch-rate="1" complexity="9">
+        <class name="GREF.UnitsOfWork.GenericUnitOfWork`1" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\UnitsOfWork\GenericUnitOfWork.cs" line-rate="0" branch-rate="1" complexity="10">
           <methods>
             <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1077,6 +1181,11 @@
                 <line number="26" hits="0" branch="false" />
               </lines>
             </method>
+            <method name="GetGruposAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="0" branch="false" />
+              </lines>
+            </method>
             <method name="UpdateAsync" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
                 <line number="24" hits="0" branch="false" />
@@ -1096,6 +1205,7 @@
             <line number="25" hits="0" branch="false" />
             <line number="26" hits="0" branch="false" />
             <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
           </lines>
         </class>
         <class name="Program" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF\Program.cs" line-rate="0" branch-rate="0" complexity="2">
@@ -1180,7 +1290,7 @@
         </class>
       </classes>
     </package>
-    <package name="GREF.Shared" line-rate="0.0892857142857143" branch-rate="0" complexity="58">
+    <package name="GREF.Shared" line-rate="0.121212121212121" branch-rate="0" complexity="68">
       <classes>
         <class name="GREF.Shared.DataFinancial.Contributions" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\DataFinancial\Contributions.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
@@ -1198,6 +1308,54 @@
           <lines>
             <line number="12" hits="0" branch="false" />
             <line number="17" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="GREF.Shared.Entities.Aportes" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\Entities\Aportes.cs" line-rate="0" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_IdUser" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Periodicidad" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Meta" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Estado" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Duracion" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Fecha" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
           </lines>
         </class>
         <class name="GREF.Shared.Entities.City" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\Entities\City.cs" line-rate="0.75" branch-rate="1" complexity="4">
@@ -1258,6 +1416,30 @@
             <line number="12" hits="2" branch="false" />
             <line number="14" hits="0" branch="false" />
             <line number="17" hits="0" branch="true" condition-coverage="0% (0/2)" />
+          </lines>
+        </class>
+        <class name="GREF.Shared.Entities.Grupos" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\Entities\Grupos.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="get_NombreGrupo" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Descripcion" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="4" branch="false" />
+            <line number="13" hits="2" branch="false" />
+            <line number="14" hits="2" branch="false" />
           </lines>
         </class>
         <class name="GREF.Shared.Entities.State" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.Shared\Entities\State.cs" line-rate="0" branch-rate="0" complexity="7">
@@ -1604,7 +1786,7 @@
         </class>
       </classes>
     </package>
-    <package name="GREF.UnitTest" line-rate="0.980392156862745" branch-rate="1" complexity="7">
+    <package name="GREF.UnitTest" line-rate="0.986842105263158" branch-rate="1" complexity="10">
       <classes>
         <class name="AutoGeneratedProgram" filename="C:\Users\jaime\.nuget\packages\microsoft.net.test.sdk\17.6.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -1752,6 +1934,74 @@
             <line number="59" hits="1" branch="false" />
             <line number="62" hits="1" branch="false" />
             <line number="64" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="GREF.UnitTest.Controllers.GruposControllerTest" filename="D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\Controllers\GruposControllerTest.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="2" branch="false" />
+                <line number="24" hits="2" branch="false" />
+                <line number="25" hits="2" branch="false" />
+                <line number="26" hits="2" branch="false" />
+                <line number="27" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAsync_ReturnsNotFound" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="1" branch="false" />
+                <line number="32" hits="1" branch="false" />
+                <line number="33" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="44" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAsync_ReturnsRecord" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="48" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+                <line number="52" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="56" hits="1" branch="false" />
+                <line number="59" hits="1" branch="false" />
+                <line number="61" hits="1" branch="false" />
+                <line number="62" hits="1" branch="false" />
+                <line number="65" hits="1" branch="false" />
+                <line number="66" hits="1" branch="false" />
+                <line number="67" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="23" hits="2" branch="false" />
+            <line number="24" hits="2" branch="false" />
+            <line number="25" hits="2" branch="false" />
+            <line number="26" hits="2" branch="false" />
+            <line number="27" hits="2" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="32" hits="1" branch="false" />
+            <line number="33" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="44" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="56" hits="1" branch="false" />
+            <line number="59" hits="1" branch="false" />
+            <line number="61" hits="1" branch="false" />
+            <line number="62" hits="1" branch="false" />
+            <line number="65" hits="1" branch="false" />
+            <line number="66" hits="1" branch="false" />
+            <line number="67" hits="1" branch="false" />
           </lines>
         </class>
       </classes>

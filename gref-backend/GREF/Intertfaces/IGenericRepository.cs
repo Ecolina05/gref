@@ -18,5 +18,6 @@ namespace GREF.Intertfaces
 
         Task<Country> GetCountryAsync(int id);
         Task<City> GetCitiesAsync(int id);
+        Task<Grupos> GetGruposAsync(int id);
     }
 }

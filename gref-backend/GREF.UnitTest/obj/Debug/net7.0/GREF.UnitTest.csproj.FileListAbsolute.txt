@@ -1,9 +1,4 @@
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\bin\Debug\net7.0\CoverletSourceRootsMapping_GREF.UnitTest
-D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.csproj.AssemblyReference.cache
-D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.GeneratedMSBuildEditorConfig.editorconfig
-D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.AssemblyInfoInputs.cache
-D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.AssemblyInfo.cs
-D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.csproj.CoreCompileInputs.cache
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\bin\Debug\net7.0\testhost.dll
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\bin\Debug\net7.0\GREF.deps.json
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\bin\Debug\net7.0\GREF.runtimeconfig.json
@@ -156,6 +151,11 @@ D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\bin\Debug\ne
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\bin\Debug\net7.0\GREF.pdb
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\bin\Debug\net7.0\GREF.Shared.pdb
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.csproj.AssemblyReference.cache
+D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.AssemblyInfoInputs.cache
+D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.AssemblyInfo.cs
+D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.csproj.CoreCompileInputs.cache
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.csproj.CopyComplete
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\GREF.UnitTest.dll
 D:\ITM\ConstruccionSoftware\entrega\gref\gref-backend\GREF.UnitTest\obj\Debug\net7.0\refint\GREF.UnitTest.dll
