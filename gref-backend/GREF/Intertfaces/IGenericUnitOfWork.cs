@@ -1,4 +1,6 @@
-﻿using GREF.Shared.Responses;
+﻿using GREF.Shared.Entities;
+using GREF.Shared.Responses;
+using Microsoft.EntityFrameworkCore.Update;
 
 namespace GREF.Intertfaces
 {
@@ -14,5 +16,8 @@ namespace GREF.Intertfaces
 
         Task<Response<T>> GetAsync(int id);
         Task<Response<T>> GetAsyncUserLogin(string email, string pwd);
+
+        Task<Country> GetCountryAsync(int id);
+        Task<City> GetCitiesAsync(int id);
     }
 }

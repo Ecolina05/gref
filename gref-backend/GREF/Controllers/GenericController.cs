@@ -22,7 +22,7 @@ namespace GREF.Controllers
         public virtual async Task<IActionResult> GetAsync()
         {
             var action = await _unitOfWork.GetAsync();
-            if (action.WasSuccess)
+            if (action != null)
             {
                 return Ok(action.Result);
             }
@@ -33,12 +33,33 @@ namespace GREF.Controllers
         public virtual async Task<IActionResult> GetAsync(int id)
         {
             var action = await _unitOfWork.GetAsync(id);
-            if (action.WasSuccess)
+            if (action != null)
             {
                 return Ok(action.Result);
             }
             return NotFound();
         }
+
+        //[HttpGet("{id}")]
+        //public virtual async Task<IActionResult> GetCountryAsync(int id)
+        //{
+        //    var action = await _unitOfWork.GetCountryAsync(id);
+        //    if (action != null)
+        //    {
+        //        return Ok(action);
+        //    }
+        //    return NotFound();
+        //}
+        //[HttpGet("{id}")]
+        //public virtual async Task<IActionResult> GetCitiesAsync(int id)
+        //{
+        //    var action = await _unitOfWork.GetCitiesAsync(id);
+        //    if (action != null)
+        //    {
+        //        return Ok(action);
+        //    }
+        //    return NotFound();
+        //}
 
         [HttpPost]
         public virtual async Task<IActionResult> PostAsync(T model)

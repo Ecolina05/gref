@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GREF", "GREF.csproj", "{8F5B0636-6CFF-4679-9867-CC848DFFBE06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GREF.Shared", "..\GREF.Shared\GREF.Shared.csproj", "{4B12D2DD-AF6D-46D0-A467-C1F889C811AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GREF.Shared", "..\GREF.Shared\GREF.Shared.csproj", "{4B12D2DD-AF6D-46D0-A467-C1F889C811AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GREF.UnitTest", "..\GREF.UnitTest\GREF.UnitTest.csproj", "{A19AB7FE-0E32-44AC-B142-74714F6601D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4B12D2DD-AF6D-46D0-A467-C1F889C811AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B12D2DD-AF6D-46D0-A467-C1F889C811AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B12D2DD-AF6D-46D0-A467-C1F889C811AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19AB7FE-0E32-44AC-B142-74714F6601D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19AB7FE-0E32-44AC-B142-74714F6601D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19AB7FE-0E32-44AC-B142-74714F6601D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19AB7FE-0E32-44AC-B142-74714F6601D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
