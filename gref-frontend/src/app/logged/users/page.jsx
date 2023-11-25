@@ -1,15 +1,27 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from '@nextui-org/react'
 import Header from '@/app/components/header'
+import { getUsersService } from './users.service'
 
 const Users = () => {
+  const [users, setUsers] = useState([])
   const headerInfo = {
     title: 'Usuarios',
     subtitle: 'Listado de todos los usuarios registrados en nuestro sistema.',
     action: 'users/add'
   }
+
+  const getUsers = async () => {
+    const response = await getUsersService()
+    console.log(response)
+    response && setUsers(response)
+  }
+
+  useEffect(() => {
+    getUsers()
+  }, [])
 
   return (
     <>

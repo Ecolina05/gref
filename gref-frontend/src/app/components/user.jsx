@@ -9,52 +9,59 @@ import {
   DropdownSection,
   Avatar
 } from '@nextui-org/react'
-import Link from 'next/link'
 import { AiOutlineUser } from 'react-icons/ai'
+import { useAuthStore } from '@/store/auth-store'
+import { useRouter } from 'next/navigation'
 
-const User = () => (
-  <>
-    <Dropdown placement='bottom-end'>
-      <DropdownTrigger>
-        <Avatar
-          isBordered
-          as='button'
-          className='transition-transform'
-          color='success'
-          name='Ernesto Colina'
-          size='sm'
-          showFallback
-          fallback={<AiOutlineUser size='17' />}
-        />
-      </DropdownTrigger>
+const User = () => {
+  const router = useRouter()
+  const { user } = useAuthStore()
 
-      <DropdownMenu
-        aria-label='Profile Actions'
-        variant='flat'
-      >
-        <DropdownSection
-          aria-label='Options'
-          showDivider
+  return (
+    <>
+      <Dropdown placement='bottom-end'>
+        <DropdownTrigger>
+          <Avatar
+            isBordered
+            as='button'
+            className='transition-transform'
+            color='success'
+            name='Ernesto Colina'
+            size='sm'
+            showFallback
+            fallback={<AiOutlineUser size='17' />}
+          />
+        </DropdownTrigger>
+
+        <DropdownMenu
+          aria-label='Profile Actions'
+          variant='flat'
         >
-          <DropdownItem
-            isReadOnly
-            key='profile'
-            className='h-14 gap-2'
+          <DropdownSection
+            aria-label='Options'
+            showDivider
           >
-            <p className='font-semibold'>Ernesto Colina</p>
-            <p className='font-normal'>Administrador</p>
-          </DropdownItem>
-        </DropdownSection>
+            <DropdownItem
+              isReadOnly
+              key='profile'
+              className='h-14 gap-2'
+            >
+              <p className='font-semibold'>{`${user?.nombres} ${user?.primerApellido}`}</p>
+              <p className='font-normal'>{user?.tipo}</p>
+            </DropdownItem>
+          </DropdownSection>
 
-        <DropdownItem
-          key='logout'
-          color='danger'
-        >
-          <Link href='/auth/login'>Cerrar sesión</Link>
-        </DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
-  </>
-)
+          <DropdownItem
+            key='logout'
+            color='danger'
+            onClick={() => router.push('/auth/login')}
+          >
+            Cerrar sesión
+          </DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+    </>
+  )
+}
 
 export default User

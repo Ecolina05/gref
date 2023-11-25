@@ -9,38 +9,39 @@ import Link from 'next/link'
 import { showToast } from '@/utils/toast'
 import '../_auth.scss'
 import { loginService } from '../auth.service'
+import { useAuthStore } from '@/store/auth-store'
 
 const Login = () => {
   const router = useRouter()
   const { register, handleSubmit } = useForm()
   const [loading, setLoading] = useState(false)
+  const { updateUser } = useAuthStore()
 
   const onLogin = handleSubmit(async ({ email, pwd }) => {
     setLoading(true)
     const payload = {
       id: 1,
+      email,
+      pwd,
       tipoDocumento: '',
       numeroDocumento: '',
       nombres: '',
       primerApellido: '',
       segundoApellido: '',
       telefono: '',
-      email,
       tipo: '',
-      pwd,
       estadoUsuario: '',
       grupoAhorro: ''
     }
-    console.log(payload)
 
     const response = await loginService(payload)
-    if ([400, 401, 404, 415].includes(response?.status)) {
+    if (response === 'Registro no encontrado' || [400, 401, 404, 415].includes(response?.status)) {
       showToast('error', 'Error al iniciar sesión')
       setLoading(false)
       return
     }
-    console.log(response)
 
+    updateUser(response)
     showToast('success', '¡Bienvenido!')
     setTimeout(() => router.push('/logged/countries'), 500)
     setLoading(false)

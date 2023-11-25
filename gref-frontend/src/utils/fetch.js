@@ -4,13 +4,15 @@ import { showToast } from './toast'
 const useFetch = async (method, endpoint, body = null) => {
   method = method.toUpperCase()
 
-  const headers = new Headers()
-  headers.append('Accept', '*/*')
+  const headers = {
+    Accept: 'application/json, text/plain',
+    'Content-Type': 'application/json;charset=UTF-8'
+  }
 
   const config = {
     method,
     headers,
-    ...(method !== 'GET' ? { body } : {})
+    ...(method !== 'GET' ? { body: JSON.stringify(body) } : {})
   }
 
   return fetch(`${API_URL}/${endpoint}`, config)

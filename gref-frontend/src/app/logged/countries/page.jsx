@@ -18,15 +18,18 @@ const Countries = () => {
         <TableHeader>
           <TableColumn>ID</TableColumn>
           <TableColumn>Nombre país</TableColumn>
+          <TableColumn>Departamentos/Estados</TableColumn>
         </TableHeader>
         <TableBody>
           <TableRow key='1'>
             <TableCell>1</TableCell>
             <TableCell>Colombia</TableCell>
+            <TableCell>33</TableCell>
           </TableRow>
           <TableRow key='2'>
             <TableCell>2</TableCell>
             <TableCell>Perú</TableCell>
+            <TableCell>44</TableCell>
           </TableRow>
         </TableBody>
       </Table>

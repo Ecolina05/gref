@@ -20,9 +20,10 @@ const Register = () => {
     setLoading(true)
     const payload = {
       ...formValue,
-      id: 0
+      id: 0,
+      estadoUsuario: 'Active',
+      grupoAhorro: ''
     }
-    console.log(payload)
 
     const response = await regirterUserService(payload)
     if ([400, 401, 404].includes(response?.status)) {
