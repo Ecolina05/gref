@@ -6,7 +6,10 @@ const useFetch = async (method, endpoint, body = null) => {
 
   const headers = {
     Accept: 'application/json, text/plain',
-    'Content-Type': 'application/json;charset=UTF-8'
+    'Content-Type': 'application/json;charset=UTF-8',
+    'Access-Control-Allow-Origin': API_URL,
+    'Access-Control-Allow-Methods': 'POST, GET, PUT, DELETE',
+    'Access-Control-Allow-Headers': 'Content-Type'
   }
 
   const config = {
