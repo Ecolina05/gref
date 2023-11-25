@@ -91,6 +91,13 @@ namespace GREF.Repositories
                     .FirstOrDefaultAsync(c => c.Id == id);
             return country!;
         }
+        public async Task<Grupos> GetGruposAsync(int id)
+        {
+            var grupos = await _context.Grupos
+                    .Include(c => c.Id!)
+                    .FirstOrDefaultAsync(c => c.Id == id);
+            return grupos!;
+        }
 
         public async Task<Response<T>> GetAsyncUserLogin(string email, string pwd)
         {
